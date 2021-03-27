@@ -55,7 +55,7 @@ input {
 }
 
 input:hover{
-    width:400px;
+    width:150px;
     background:black;
     color:white;
 }

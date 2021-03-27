@@ -11,6 +11,7 @@
         
         <!--Search bar-->
         <div class="searchBarAndSubmit">
+            <h2>Search Section</h2>
             <form id="price_form">
                 <input  id="searched" type="text" placeholder="Stock Name">
                 <button>SUBMIT</button>
@@ -21,14 +22,38 @@
 
         {{!-- buy bar  --}}
         <div>
-            
+            <h2>Buy Section</h2>
+            <form id="buy_form">
+                Put stock name here:
+                <input id="buy_name_seached" type="text" placeholder="Stock Name">
+
+                Put the amount here:
+                <input id="buy_number_searched" type="number" placeholder="Amount of Integer">
+
+                <button>Submit</button>
+
+            </form>
         </div>
 
         {{!-- sell bar --}}
+        <div>
+            <h2>Sell Section</h2>
+            <form id="sell_form">
+                Put stock name here:
+                <input id="sell_name_seached" type="text" placeholder="Stock Name">
+
+                Put the amount here:
+                <input id="sell_number_searched" type="number" placeholder="Amount of Integer">
+
+                <button>Submit</button>
+
+            </form>
+        </div>
 
 
         <!--display search result-->
         <div class="result">
+             <h2>Result Section</h2>
             Display Seached Results: 
             <p id="result">printing in progress</p>
             <p id="result2"></p>
@@ -37,13 +62,20 @@
         </div>
 
 
-        <div id="ur_money">
+
+        <div id="myStonk">
+            <h2>My Stonks</h2>
+            List of all owned stock
+        </div>
             
+
+        <div id="ur_money">
+            <h2>My Papel Moni</h2>
         </div>
 
 
         <div>
-            <img>
+            
             <img src="./img/catdancing.gif" alt="cat vibing">
         </div>
         {{>footer}}
