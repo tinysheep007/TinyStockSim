@@ -1,0 +1,69 @@
+header {
+    margin-top: 16px;
+    margin-bottom: 16px;
+    border-bottom: 10px solid orange;
+    
+}
+
+header a{
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+    color:black;
+    margin-right: 16px;
+    font-size: 25px;
+}
+
+body{
+
+    cursor:progress;
+
+    color:rgb(40, 9, 112);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    max-width: 650px;
+    margin:0 auto;
+    padding:0px 16px;
+    
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.main-content{
+    flex-grow: 1;
+}
+
+footer {
+    color:blueviolet;
+    border-top: 16px dashed red;
+    margin-top: 16px;
+    padding:16px 0px;
+}
+
+
+h1 {
+    font-size: 55px;
+    font-family: 'Courier New', Courier, monospace;
+    color:lightseagreen;
+    margin-bottom: 0px;
+}
+
+input {
+    border:3px solid orange;
+    width:100px;
+    padding:8px;
+    transition: all 1s;
+}
+
+input:hover{
+    width:400px;
+    background:black;
+    color:white;
+}
+
+button{
+    border:3px solid black;
+    padding:8px;
+    background:darkmagenta;
+    color:azure;
+    cursor:pointer;
+}

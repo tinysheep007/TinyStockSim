@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" >
+        <link rel="stylesheet" href="./css/style.css">
+        <title>TinyStockSim</title>
+        
+    </head>
+    <body>
+        {{>header}}
+        
+        <!--Search bar-->
+        <div class="searchBarAndSubmit">
+            <form id="price_form">
+                <input  id="searched" type="text" placeholder="Stock Name">
+                <button>SUBMIT</button>
+            </form>
+            
+        </div>
+
+
+        {{!-- buy bar  --}}
+        <div>
+            
+        </div>
+
+        {{!-- sell bar --}}
+
+
+        <!--display search result-->
+        <div class="result">
+            Display Seached Results: 
+            <p id="result">printing in progress</p>
+            <p id="result2"></p>
+            <p id="result3"></p>
+            <p></p>
+        </div>
+
+
+        <div id="ur_money">
+            
+        </div>
+
+
+        <div>
+            <img>
+            <img src="./img/catdancing.gif" alt="cat vibing">
+        </div>
+        {{>footer}}
+        <script src="./js/app.js"></script>
+    </body>
+</html>
