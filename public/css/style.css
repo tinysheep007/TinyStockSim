@@ -67,3 +67,7 @@ button{
     color:azure;
     cursor:pointer;
 }
+
+.result{
+    border:5px solid black;
+}
