@@ -1,8 +1,13 @@
+body{
+    background-image: url("../img/background.jpg");
+}
+
 .titleHeadP h1{
     text-align: center;
     font-family: 'Courier New', Courier, monospace;
     color:lightseagreen;
 }
+
 .titleHeadP .linksForPages a{
     text-decoration: none;
     font-family: 'Times New Roman', Times, serif;
@@ -12,7 +17,15 @@
 }
 .titleHeadP .linksForPages{
     text-align: center;
+    text-decoration: none;
+    color:red;
 }
+
+.titleHeadP a{
+    text-decoration: none;
+    color:red;
+}
+
 
 /* Home Page */
 
@@ -28,8 +41,9 @@
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     width: 325px;
     margin-bottom: 64px;
+    background: rgb(9,9,121);
+    background: linear-gradient(45deg, rgba(9,9,121,1) 0%, rgba(126,149,163,1) 26%, rgba(3,134,203,1) 75%, rgba(2,150,213,1) 80%, rgba(2,0,36,1) 87%, rgba(137,149,153,1) 92%, rgba(0,212,255,1) 100%);
 }
-
 .searchBarAndSubmit button{
     border: 3px solid black;
     padding: 8px;
@@ -41,22 +55,44 @@
 }
 .searchBarAndSubmit input{
     border: 3px solid orange;
-    width: 290px;
+    width: 275px;
     padding: 8px;
     transition: all 1s;
 }
+
+.searchBarAndSubmit input:focus{
+    border: 3px solid black;
+    width: 290px;
+    padding: 5px;
+    transition: all 1s;
+    color:white;
+    background-color: black;
+}
+
 /* Continuing Left section */
 .homeLeftSection input{
     border: 3px solid orange;
-    width: 128px;
+    width: 80px;
     padding: 8px;
+    background-color:aqua;
     transition: all 1s;
 }
+
+.homeLeftSection input:focus{
+    border: 3px solid orange;
+    width: 128px;
+    background-color:black;
+    color:white;
+    
+}
+
+
 .buy{
     border: 3px solid black;
     padding: 10px;
     width: 325px;
     margin-bottom: 64px;
+    background-color: bisque;
 }
 .homeLeftSection .buy button{
     border: 3px solid black;
@@ -72,6 +108,8 @@
     padding: 10px;
     width: 325px;
     margin-bottom: 64px;
+    background: rgb(9,9,121);
+background: linear-gradient(45deg, rgba(9,9,121,1) 0%, rgba(142,163,126,0.36785136417848385) 26%, rgba(3,134,203,1) 75%, rgba(2,150,213,1) 80%, rgba(2,0,36,1) 87%, rgba(137,149,153,1) 92%, rgba(0,212,255,1) 100%);
 }
 .homeLeftSection .sell button{
     border: 3px solid black;
@@ -96,6 +134,8 @@
     border:3px solid black;
     padding: 10px;
     margin-bottom: 64px;
+    background: rgb(131,58,180);
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(128,253,29,0.37625472552302175) 20%, rgba(253,82,43,1) 68%, rgba(252,176,69,1) 100%);
 }
 
 .ur_money{
@@ -103,12 +143,16 @@
     width: 395px;
     padding: 10px;
     margin-bottom: 64px;
+    background: rgb(11,121,9);
+    background: linear-gradient(218deg, rgba(11,121,9,1) 6%, rgba(142,163,126,0.36785136417848385) 7%, rgba(2,0,36,1) 29%, rgba(100,158,139,1) 33%, rgba(85,156,144,1) 42%, rgba(68,148,167,1) 44%, rgba(137,149,153,1) 46%, rgba(2,150,213,1) 53%, rgba(186,203,3,1) 66%, rgba(0,212,255,1) 100%);
 }
 .myStonk{
     border:3px solid black;
     width: 395px;
     padding: 10px;
     margin-bottom: 64px;
+    background: rgb(142,163,126);
+    background: linear-gradient(90deg, rgba(142,163,126,0.36785136417848385) 32%, rgba(68,148,167,1) 52%, rgba(186,203,3,1) 66%, rgba(2,150,213,1) 80%, rgba(2,0,36,1) 87%, rgba(137,149,153,1) 92%, rgba(9,9,121,1) 94%, rgba(0,212,255,1) 100%);
 }
 
 /* home middle section */
@@ -116,7 +160,11 @@
     border:5px dashed blueviolet;
     width:425px;
     position:absolute;
+    height:250px;
     left:375px;
+    bottom:100px;
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(217,184,180,0.5247141092765231) 41%, rgba(148,187,233,1) 100%);
 
 }
 
