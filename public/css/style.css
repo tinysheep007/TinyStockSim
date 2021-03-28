@@ -1,8 +1,39 @@
-header {
+.leftSection{
+    float:left;
+}
+.rightSection{
+    float: right;
+}
+.h1{
+    text-align: center;
+}
+.searchBarAndSubmit{
+    border:3px solid black;
+}
+.result {
+    border:3px solid black;
+}
+.buy{
+    border: 3px solid black;
+}
+.sell{
+    border:3px solid black;
+}
+.ur_money{
+    border:3px solid black;
+}
+.myStonk{
+    border:3px solid black;
+}
+.footer{
+    border:3px solid black;
+}
+
+/* header {
     margin-top: 16px;
     margin-bottom: 16px;
     border-bottom: 10px solid orange;
-    
+    float: left;
 }
 
 header a{
@@ -16,40 +47,41 @@ header a{
 body{
 
     cursor:progress;
-
     color:rgb(40, 9, 112);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     max-width: 800px;
     /* margin:auto auto; */
-    padding:0px 16px;
+    /* padding:0px 16px;
     margin-left: 30px;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-}
+    float: left;
+} */
 
-.main-content{
+/* .main-content{
     /* flex-grow: 1; */
-}
+/* }
 
 footer {
     color:blueviolet;
     border-top: 16px dashed red;
     margin-top: 16px;
     padding:16px 0px;
-}
+    float: left;
+} */ 
 
 
-h1 {
+/* h1 {
     font-size: 55px;
     font-family: 'Courier New', Courier, monospace;
     color:lightseagreen;
     margin-bottom: 0px;
-}
+} */
 
-input {
+/* input {
     border:3px solid orange;
-    width:100px;
+    width:99px;
     padding:8px;
     transition: all 1s;
 }
@@ -66,49 +98,45 @@ button{
     background:darkmagenta;
     color:azure;
     cursor:pointer;
-}
+} */
 
-.result{
+/* .result{
     border:3px solid black;
     margin-bottom: 20px;
-    padding: 10px;
-    position: fixed;
-    left:875px;
-    top:100px;
-    
-    
+    padding: 10px 0;
+    float:right;
 }
 
 .buy{
     border:3px solid black;
     margin-bottom: 20px;
     padding: 10px;
+    float: left;
 }
 
 .sell{
     border:3px solid black;
     margin-bottom: 20px;
     padding: 10px;
+    float: left;
 }
 
 .searchBarAndSubmit{
     border:3px solid black;
     margin-bottom: 20px;
     padding: 10px;
-}
+} */
 
-.myStonk{
+/* .myStonk{
     border:3px solid black;
     margin-bottom: 20px;
     padding: 10px;
+    float:left;
 }
 
 .ur_money{
     border:3px solid black;
     margin-bottom: 20px;
     padding: 10px;
-
-    position: fixed;
-    left:875px;
-    top:350px;
-}
+    float: right;
+} */

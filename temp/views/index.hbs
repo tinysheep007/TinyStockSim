@@ -5,7 +5,6 @@
         <link rel="stylesheet" href="./css/style.css">
         <title>TinyStockSim</title>
         <link rel="icon" href="./img/icon.jpg">
-        
     </head>
     <body>
         {{>header}}
@@ -20,72 +19,69 @@
             
         </div>
 
+        <div class="leftSection">
+            {{!-- buy bar  --}}
+            <div class="buy" id="buy_jump">
+                <h2>Buy Section</h2>
+                <form id="buy_form">
+                    Put stock name here:
+                    <input id="buy_name_seached" type="text" placeholder="Stock Name">
 
-        {{!-- buy bar  --}}
-        <div class="buy" id="buy_jump">
-            <h2>Buy Section</h2>
-            <form id="buy_form">
-                Put stock name here:
-                <input id="buy_name_seached" type="text" placeholder="Stock Name">
+                    Put the amount here:
+                    <input id="buy_number_searched" type="number" placeholder="Amount of Integer">
 
-                Put the amount here:
-                <input id="buy_number_searched" type="number" placeholder="Amount of Integer">
+                    <button type="submit">Submit</button>
 
-                <button type="submit">Submit</button>
+                </form>
+            </div>
+            {{!-- sell bar --}}
+            <div class="sell" id="sell_jump">
+                <h2>Sell Section</h2>
+                <form id="sell_form">
+                    Put stock name here:
+                    <input id="sell_name_seached" type="text" placeholder="Stock Name">
 
-            </form>
+                    Put the amount here:
+                    <input id="sell_number_searched" type="number" placeholder="Amount of Integer">
+
+                    <button type="submit">Submit</button>
+
+                </form>
+            </div>
+            <div>
+                <img src="./img/catdancing.gif" alt="cat vibing">
+            </div>
+            {{>footer}}
         </div>
 
-        {{!-- sell bar --}}
-        <div class="sell" id="sell_jump">
-            <h2>Sell Section</h2>
-            <form id="sell_form">
-                Put stock name here:
-                <input id="sell_name_seached" type="text" placeholder="Stock Name">
+        <div class="rightSection">
+            <!--display search result-->
+            <div class="result">
+                <h2>Result Section</h2>
+                Display Seached Results: 
+                <p id="result">Empty Result. Please do something. Just do something.</p>
+                <p id="result2"></p>
+                <p id="result3"></p>
+                <p id="result4"></p>
+                <p id="result5"></p>
+                <p></p>
+            </div>
 
-                Put the amount here:
-                <input id="sell_number_searched" type="number" placeholder="Amount of Integer">
+            <div class="myStonk">
+                <h2>My Stonks</h2>
+                List of all owned stock
+                <ol id="myStonk">
 
-                <button type="submit">Submit</button>
+                </ol>
+            </div>
+                
 
-            </form>
+            <div class="ur_money">
+                <h2>My Papel Moni</h2>
+                <p id="ur_money"></p>
+            </div>
         </div>
 
-
-        <!--display search result-->
-        <div class="result">
-             <h2>Result Section</h2>
-            Display Seached Results: 
-            <p id="result">Empty Result. Please do something. Just do something.</p>
-            <p id="result2"></p>
-            <p id="result3"></p>
-            <p id="result4"></p>
-            <p id="result5"></p>
-            <p></p>
-        </div>
-
-
-
-        <div class="myStonk">
-            <h2>My Stonks</h2>
-            List of all owned stock
-            <ol id="myStonk">
-
-            </ol>
-        </div>
-            
-
-        <div class="ur_money">
-            <h2>My Papel Moni</h2>
-            <p id="ur_money"></p>
-        </div>
-
-
-        <div>
-            
-            <img src="./img/catdancing.gif" alt="cat vibing">
-        </div>
-        {{>footer}}
         <script src="./js/app.js"></script>
     </body>
 </html>

@@ -21,7 +21,9 @@ app.use(express.static(public_dir))
 
 
 app.get(`/`,(req,res)=>{
-    res.render('index',{})
+    res.render('index',{
+        
+    })
 })
 
 app.get(`/price`,(req,res)=>{
@@ -46,6 +48,12 @@ app.get(`/price`,(req,res)=>{
         })
     })
 
+})
+
+app.get('/about',(req,res) => {
+    res.render('about', {
+
+    })
 })
 
 app.listen(port,()=>{
