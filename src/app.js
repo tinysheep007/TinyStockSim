@@ -21,7 +21,9 @@ app.use(express.static(public_dir))
 
 
 app.get(`/`,(req,res)=>{
-    res.render('index',{})
+    res.render('index',{
+
+    })
 })
 
 app.get(`/price`,(req,res)=>{
@@ -52,6 +54,9 @@ app.get(`/about`,(req,res)=>{
     res.render(`about`,{})
 })
 
+app.get(`/help`,(req,res)=>{
+    res.render(`help`,{})
+})
 app.listen(port,()=>{
     console.log(`app is listening at `+port)
 })

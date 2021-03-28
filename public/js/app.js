@@ -47,7 +47,7 @@ price_form.addEventListener(`submit`,(event)=>{
                 result.textContent="current price: $"+ data.response.close
                 result2.textContent="Today's high: $"+data.response.high+" dollars"
                 result3.textContent="Today's low: $"+data.response.low+" dollars"
-                result5.textContent="Extended Price: $" + data.response.extendedPrice
+                result5.textContent= data.response.extendedPrice? "Extended Price: $" + data.response.extendedPrice: ""
                 ur_money.textContent="Your current balance is: "+money+" dollars"
                 
             }
