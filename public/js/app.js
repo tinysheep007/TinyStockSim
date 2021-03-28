@@ -16,15 +16,19 @@ const sell_form=document.querySelector(`#sell_form`)
 const sell_name_seached=document.querySelector(`#sell_name_seached`)
 const sell_number_searched=document.querySelector(`#sell_number_searched`)
 const myStonk=document.querySelector(`#myStonk`)
+const history_section=document.querySelector(`#history`)
+
 
 
 //set the inital money amount
-
 let money=5000
 ur_money.textContent="Your current balance is: "+money+" dollars"
 
 //set up all the owned stocks
 let owned_stock=[]
+
+//set up history block
+let history=[]
 
 price_form.addEventListener(`submit`,(event)=>{
     //prevent the page auto refreshes when u submit
@@ -49,6 +53,14 @@ price_form.addEventListener(`submit`,(event)=>{
                 result3.textContent="Today's low: $"+data.response.low+" dollars"
                 result5.textContent= data.response.extendedPrice? "Extended Price: $" + data.response.extendedPrice: ""
                 ur_money.textContent="Your current balance is: "+money+" dollars"
+                history.unshift({
+                    type:"browsed",
+                    symbol:data.response.symbol,
+                    amount:0
+
+                })
+                console.log(history[0])
+                my_history()
                 
             }
         })
@@ -81,6 +93,9 @@ buy_form.addEventListener('submit',(event)=>{
                 result3.textContent="Today's low: $"+data.response.low
                 result4.textContent=""
                 if(money-(amt*data.response.close)<0){
+                    result.textContent=""
+                    result2.textContent=""
+                    result3.textContent=""
                     result4.textContent="Not Enough Money Honey !"
                 }
                 else{
@@ -92,6 +107,13 @@ buy_form.addEventListener('submit',(event)=>{
                             owned_stock[i].amount=(owned_stock[i].amount)+parseInt(amt)
                             my_Stock()
                             result4.textContent="Bought Success Honey!"
+                            history.unshift({
+                                type:"Bought",
+                                symbol:data.response.symbol,
+                                amount:amt
+            
+                            })
+                            my_history()
                             return;
                         }
                     }
@@ -102,6 +124,13 @@ buy_form.addEventListener('submit',(event)=>{
                         boughtTime: new Date()
                     })
                     my_Stock()
+                    history.unshift({
+                        type:"Bought",
+                        symbol:data.response.symbol,
+                        amount:amt
+    
+                    })
+                    my_history()
                     
                     
                 }
@@ -148,6 +177,13 @@ sell_form.addEventListener('submit',(event)=>{
                                 ur_money.textContent="Your current balance is: "+money+" dollars"
                                 my_Stock()
                                 result4.textContent="Sold Success Honey!"
+                                history.unshift({
+                                    type:"Sold",
+                                    symbol:data.response.symbol,
+                                    amount:amt
+                
+                                })
+                                my_history()
                                 return;
                             }
                             else {
@@ -180,4 +216,15 @@ function my_Stock(){
         
     }
    
+}
+
+function my_history(){
+    history_section.textContent=""
+    let i
+    for(i=0; i<history.length; i++){
+            let node=document.createElement(`li`)
+            let textnode = document.createTextNode("Type: "+history[i].type + "  Symbol :"+history[i].symbol+"  amt: "+history[i].amount);
+            node.appendChild(textnode);
+            history_section.appendChild(node);
+    }
 }
