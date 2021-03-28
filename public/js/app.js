@@ -44,8 +44,8 @@ price_form.addEventListener(`submit`,(event)=>{
                 //addd more useful content
                 //result.textContent="found data"
                 result.textContent="current price: "+ data.response.close + " dollars"
-                result2.textContent="Today's high:"+data.response.high+" dollars"
-                result3.textContent="Today's low:"+data.response.low+" dollars"
+                result2.textContent="Today's high: "+data.response.high+" dollars"
+                result3.textContent="Today's low: "+data.response.low+" dollars"
                 ur_money.textContent="Your current balance is: "+money+" dollars"
                
             }
