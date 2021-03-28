@@ -76,9 +76,9 @@ buy_form.addEventListener('submit',(event)=>{
             else{
                 //addd more useful content
                 //result.textContent="found data"
-                result.textContent="Comp Name: "+data.response.companyName +" price: "+data.response.close + " dollars"
-                result2.textContent="Today's high: "+data.response.high+" dollars"
-                result3.textContent="Today's low: "+data.response.low+" dollars"
+                result.textContent="Price: $"+data.response.close
+                result2.textContent="Today's high: $"+data.response.high
+                result3.textContent="Today's low: $"+data.response.low
                 result4.textContent=""
                 if(money-(amt*data.response.close)<0){
                     result4.textContent="Not Enough Money Honey !"
@@ -131,9 +131,9 @@ sell_form.addEventListener('submit',(event)=>{
             else{
                 //addd more useful content
                 //result.textContent="found data"
-                result.textContent="current price: "+data.response.companyName 
-                result2.textContent="Today's high:"+data.response.high+" dollars"
-                result3.textContent="Today's low:"+data.response.low+" dollars"
+                result.textContent="current price: $"+data.response.close
+                result2.textContent="Today's high: $"+data.response.high
+                result3.textContent="Today's low: $"+data.response.low
                 result4.textContent=""
                 if(owned_stock===null || owned_stock.length==0){
                     result4.textContent="You do not have nay stocks Honey !"

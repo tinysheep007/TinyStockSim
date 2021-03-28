@@ -10,52 +10,6 @@
         <div class=titleHeadP>
             {{>header}}
         </div>
-        
-        <!--Search bar-->
-        <div class="searchBarAndSubmit">
-            <h2>Search Section</h2>
-            <form id="price_form">
-                <input  id="searched" type="text" placeholder="Stock Name">
-                <button type="submit">SUBMIT</button>
-            </form>
-            
-        </div>
-
-        <div class="homeLeftSection">
-            {{!-- buy bar  --}}
-            <div class="buy" id="buy_jump">
-                <h2>Buy Section</h2>
-                <form id="buy_form">
-                    Put stock name here:
-                    <input id="buy_name_seached" type="text" placeholder="Stock Name">
-
-                    Put the amount here:
-                    <input id="buy_number_searched" type="number" placeholder="Amount of Integer">
-
-                    <button type="submit">Submit</button>
-
-                </form>
-            </div>
-            {{!-- sell bar --}}
-            <div class="sell" id="sell_jump">
-                <h2>Sell Section</h2>
-                <form id="sell_form">
-                    Put stock name here:
-                    <input id="sell_name_seached" type="text" placeholder="Stock Name">
-
-                    Put the amount here:
-                    <input id="sell_number_searched" type="number" placeholder="Amount of Integer">
-
-                    <button type="submit">Submit</button>
-
-                </form>
-            </div>
-            <div>
-                <img src="./img/catdancing.gif" alt="cat vibing">
-            </div>
-            {{>footer}}
-        </div>
-
         <div class="homeRightSection">
             <!--display search result-->
             <div class="result">
@@ -83,27 +37,47 @@
                 <p id="ur_money"></p>
             </div>
         </div>
+        <!--Search bar-->
+        <div class="searchBarAndSubmit">
+            <h2>Search Section</h2>
+            <form id="price_form">
+                <input  id="searched" type="text" placeholder="Stock Name">
+                <button type="submit">SUBMIT</button>
+            </form>
+            
+        </div>
+        
+        <div class="homeLeftSection">
+            {{!-- buy bar  --}}
+            <div class="buy" id="buy_jump">
+                <h2>Buy Section</h2>
+                <form id="buy_form">
+                    <input id="buy_name_seached" type="text" placeholder="Stock Name">
+
+                    <input id="buy_number_searched" type="number" placeholder="Amount of Integer">
+
+                    <button type="submit">Submit</button>
+
+                </form>
+            </div>
+            {{!-- sell bar --}}
+            <div class="sell" id="sell_jump">
+                <h2>Sell Section</h2>
+                <form id="sell_form">
+                    <input id="sell_name_seached" type="text" placeholder="Stock Name">
+
+                    <input id="sell_number_searched" type="number" placeholder="Amount of Integer">
+
+                    <button type="submit">Submit</button>
+
+                </form>
+            </div>
+            {{!-- <div>
+                <img src="./img/catdancing.gif" alt="cat vibing">
+            </div> --}}
+            {{>footer}}
+        </div>
 
         <script src="./js/app.js"></script>
     </body>
 </html>
-{{!-- <!DOCTYPE html>
-
-<html> 
-    <head> 
-        <title>About</title>
-        <link rel="icon" href="/img/icon.png">
-        <link rel="stylesheet" href="./css/style.css">
-    </head>
-        
-    <body>
-        <div class="main-content">
-            {{>header_about}}
-            <p>This site was created by Sajin Saju. It uses data from mapbox.com and weatherstack.com</p>
-            <img class = "portrait" src = "/img/IMG_1116.jpg">
-        </div>
-        
-        {{>footer}}
-    </body>
-
-</html> --}}
