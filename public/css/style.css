@@ -72,6 +72,9 @@ button{
     border:3px solid black;
     margin-bottom: 20px;
     padding: 10px;
+    position: fixed;
+    left:875px;
+    top:100px;
     
     
 }
@@ -104,4 +107,8 @@ button{
     border:3px solid black;
     margin-bottom: 20px;
     padding: 10px;
+
+    position: fixed;
+    left:875px;
+    top:350px;
 }

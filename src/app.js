@@ -31,7 +31,6 @@ app.get(`/price`,(req,res)=>{
         })
     }
     //identity type of either buying, selling, or searching 
-    const transactions=req.query.transactions
 
     const name=req.query.name
     stock_price(name,(error,response)=>{
