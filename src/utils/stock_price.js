@@ -18,6 +18,7 @@ const stock_price=function(company_name,callback){
             const close=body.close
             const high=body.high
             const low=body.low
+            
             console.log(symbol)
             console.log(companyName)
             console.log(close)
@@ -28,7 +29,8 @@ const stock_price=function(company_name,callback){
                 symbol,
                 close,
                 high,
-                low
+                low,
+                extendedPrice: body.extendedPrice
             })
         }
         
