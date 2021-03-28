@@ -14,8 +14,10 @@
     text-align: center;
 }
 
+/* Home Page */
+
 /* Left */
-.leftSection{
+.homeLeftSection{
     float:left;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 }
@@ -40,14 +42,14 @@
     transition: all 1s;
 }
 /* Continuing Left section */
-.leftSection button{
+.homeLeftSection button{
     border: 3px solid black;
     padding: 8px;
     background: darkmagenta;
     color:azura;
     cursor:pointer;
 }
-.leftSection input{
+.homeLeftSection input{
     border: 3px solid orange;
     width: 99px;
     padding: 8px;
@@ -66,7 +68,7 @@
     padding: 16px;
 }
 /* Right */
-.rightSection{
+.homeRightSection{
     float: right;
 }
 .result {
@@ -82,114 +84,22 @@
     padding: 10px;
 }
 
-/* header {
-    margin-top: 16px;
-    margin-bottom: 16px;
-    border-bottom: 10px solid orange;
-    float: left;
-}
+/* End of Home-Page */
 
-header a{
-    text-decoration: none;
-    font-family: 'Times New Roman', Times, serif;
-    color:black;
-    margin-right: 16px;
-    font-size: 25px;
-}
+/* Start of About-Page */
 
-body{
-
-    cursor:progress;
-    color:rgb(40, 9, 112);
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    max-width: 800px;
-    /* margin:auto auto; */
-    /* padding:0px 16px;
-    margin-left: 30px;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    float: left;
-} */
-
-/* .main-content{
-    /* flex-grow: 1; */
-/* }
-
-footer {
-    color:blueviolet;
-    border-top: 16px dashed red;
-    margin-top: 16px;
-    padding:16px 0px;
-    float: left;
-} */ 
-
-
-/* h1 {
-    font-size: 55px;
-    font-family: 'Courier New', Courier, monospace;
-    color:lightseagreen;
-    margin-bottom: 0px;
-} */
-
-/* input {
-    border:3px solid orange;
-    width:99px;
-    padding:8px;
-    transition: all 1s;
-}
-
-input:hover{
-    width:150px;
-    background:black;
-    color:white;
-}
-
-button{
-    border:3px solid black;
-    padding:8px;
-    background:darkmagenta;
-    color:azure;
-    cursor:pointer;
-} */
-
-/* .result{
-    border:3px solid black;
-    margin-bottom: 20px;
-    padding: 10px 0;
-    float:right;
-}
-
-.buy{
-    border:3px solid black;
-    margin-bottom: 20px;
-    padding: 10px;
-    float: left;
-}
-
-.sell{
-    border:3px solid black;
-    margin-bottom: 20px;
-    padding: 10px;
-    float: left;
-}
-
-.searchBarAndSubmit{
-    border:3px solid black;
-    margin-bottom: 20px;
-    padding: 10px;
-} */
-
-/* .myStonk{
-    border:3px solid black;
-    margin-bottom: 20px;
-    padding: 10px;
+/* Left */
+.aboutLeftSection {
     float:left;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif   
 }
 
-.ur_money{
-    border:3px solid black;
-    margin-bottom: 20px;
-    padding: 10px;
-    float: right;
-} */
+/* End of About-Page */
+
+/* Start of Help-Page */
+
+/* Left */
+.helpLeftSection {
+    float:left;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif   
+}

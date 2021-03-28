@@ -5,38 +5,43 @@
         <link rel="stylesheet" href="./css/style.css">
         <title>help</title>
         <link rel="icon" href="./img/icon.jpg">
-        
     </head>
     <body>
-        {{>header_about}}
-        <p>
-            Common Question
-            <ol>
-                <li>How to Use this site?
-                    <ol>
-                        User are initally desgined to have 5000 dollars(paper money) in hand. You will try to manipulate with the different stocks in otder to maximum you financial value
-                    </ol>
+        <div class=titleHeadP>
+            {{>header_about}}
+        </div>
 
-                </li>
+        <div class="helpLeftSection">
+            <p>
+                Common Question
+                <ol>
+                    <li>How to Use this site?
+                        <ol>
+                            User are initally desgined to have 5000 dollars(paper money) in hand. You will try to manipulate with the different stocks in otder to maximum you financial value
+                        </ol>
+
+                    </li>
 
 
-                <li>How Do I Buy Stock?
-                    <ol>You have to enter the exact shorthand name for the stock company in the first search bar under the buy section. 
-                        Next, You have to enter the amount of shares you want to buy. Currently, only integer amount of shares is avaliable.
-                        After, User confirms the quantity and the company name, click submit button to contintue the process
-                    </ol>
-                </li>
-                <li>Why did you create this site?
-                    <ol>
-                        I want to learn more about the relaionship between client side javascript and backend development
-                    </ol>
+                    <li>How Do I Buy Stock?
+                        <ol>You have to enter the exact shorthand name for the stock company in the first search bar under the buy section. 
+                            Next, You have to enter the amount of shares you want to buy. Currently, only integer amount of shares is avaliable.
+                            After, User confirms the quantity and the company name, click submit button to contintue the process
+                        </ol>
+                    </li>
+                    <li>Why did you create this site?
+                        <ol>
+                            I want to learn more about the relaionship between client side javascript and backend development
+                        </ol>
 
-                </li>
-                <li>What is the purpose of it?
-                    <ol>We are aiming to help Users to better finance</ol>
-                </li>
-            </ol>
-        </p>
-        {{>footer}}
+                    </li>
+                    <li>What is the purpose of it?
+                        <ol>We are aiming to help Users to better finance</ol>
+                    </li>
+                </ol>
+            </p>
+            {{>footer}}
+        </div>
+        
     </body>
 </html>
