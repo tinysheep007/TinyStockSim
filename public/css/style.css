@@ -1,32 +1,74 @@
+h1{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    color:lightseagreen;
+}
+/* Left */
 .leftSection{
     float:left;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 }
-.rightSection{
-    float: right;
-}
-.h1{
-    text-align: center;
-}
+/* Search Bar*/
 .searchBarAndSubmit{
     border:3px solid black;
+    padding: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 }
-.result {
-    border:3px solid black;
+
+.searchBarAndSubmit button{
+    border: 3px solid black;
+    padding: 8px;
+    background: darkmagenta;
+    color:azura;
+    cursor:pointer;
+}
+.searchBarAndSubmit input{
+    border: 3px solid orange;
+    width: 99px;
+    padding: 8px;
+    transition: all 1s;
+}
+/* Continuing Left section */
+.leftSection button{
+    border: 3px solid black;
+    padding: 8px;
+    background: darkmagenta;
+    color:azura;
+    cursor:pointer;
+}
+.leftSection input{
+    border: 3px solid orange;
+    width: 99px;
+    padding: 8px;
+    transition: all 1s;
 }
 .buy{
     border: 3px solid black;
+    padding: 10px;
 }
 .sell{
     border:3px solid black;
-}
-.ur_money{
-    border:3px solid black;
-}
-.myStonk{
-    border:3px solid black;
+    padding: 10px;
 }
 .footer{
     border:3px solid black;
+    padding: 16px;
+}
+/* Right */
+.rightSection{
+    float: right;
+}
+.result {
+    border:3px solid black;
+    padding: 10px;
+}
+.ur_money{
+    border:3px solid black;
+    padding: 10px;
+}
+.myStonk{
+    border:3px solid black;
+    padding: 10px;
 }
 
 /* header {
