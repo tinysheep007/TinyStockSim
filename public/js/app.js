@@ -7,6 +7,7 @@ const result=document.querySelector(`#result`)
 const result2=document.querySelector(`#result2`)
 const result3=document.querySelector(`#result3`)
 const result4=document.querySelector(`#result4`)
+const result5=document.querySelector('#result5')
 const ur_money=document.querySelector(`#ur_money`)
 const buy_form=document.querySelector(`#buy_form`)
 const buy_name_seached=document.querySelector(`#buy_name_seached`)
@@ -43,11 +44,12 @@ price_form.addEventListener(`submit`,(event)=>{
             else{
                 //addd more useful content
                 //result.textContent="found data"
-                result.textContent="current price: "+ data.response.close + " dollars"
-                result2.textContent="Today's high: "+data.response.high+" dollars"
-                result3.textContent="Today's low: "+data.response.low+" dollars"
+                result.textContent="current price: $"+ data.response.close
+                result2.textContent="Today's high: $"+data.response.high+" dollars"
+                result3.textContent="Today's low: $"+data.response.low+" dollars"
+                result5.textContent="Extended Price: $" + data.response.extendedPrice
                 ur_money.textContent="Your current balance is: "+money+" dollars"
-               
+                
             }
         })
     })

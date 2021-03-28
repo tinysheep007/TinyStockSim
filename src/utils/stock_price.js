@@ -30,7 +30,7 @@ const stock_price=function(company_name,callback){
                 close,
                 high,
                 low,
-                
+                extendedPrice: body.extendedPrice
             })
         }
         
