@@ -48,6 +48,10 @@ app.get(`/price`,(req,res)=>{
 
 })
 
+app.get(`/about`,(req,res)=>{
+    res.render(`about`,{})
+})
+
 app.listen(port,()=>{
     console.log(`app is listening at `+port)
 })
