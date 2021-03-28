@@ -19,6 +19,7 @@
             
         </div>
 
+<<<<<<< HEAD
         <div class="leftSection">
             {{!-- buy bar  --}}
             <div class="buy" id="buy_jump">
@@ -52,6 +53,60 @@
                 <img src="./img/catdancing.gif" alt="cat vibing">
             </div>
             {{>footer}}
+=======
+
+        {{!-- buy bar  --}}
+        <div class="buy" id="buy_jump">
+            <h2>Buy Section</h2>
+            <form id="buy_form">
+                Put stock name here:
+                <input id="buy_name_seached" type="text" placeholder="Stock Name">
+
+                Put the amount here:
+                <input id="buy_number_searched" type="number" placeholder="Amount of Integer">
+
+                <button type="submit">Submit</button>
+
+            </form>
+        </div>
+
+        {{!-- sell bar --}}
+        <div class="sell" id="sell_jump">
+            <h2>Sell Section</h2>
+            <form id="sell_form">
+                Put stock name here:
+                <input id="sell_name_seached" type="text" placeholder="Stock Name">
+
+                Put the amount here:
+                <input id="sell_number_searched" type="number" placeholder="Amount of Integer">
+
+                <button type="submit">Submit</button>
+    
+            </form>
+        </div>
+
+
+        <!--display search result-->
+        <div class="result">
+             <h2>Result Section</h2>
+            Display Seached Results: 
+            <p id="result">Empty Result. Please do something. Just do something.</p>
+            <p id="result2"></p>
+            <p id="result3"></p>
+            <p id="result4"></p>
+            <p id="result5"></p>
+            <p></p>
+        </div>
+
+
+
+        <div class="myStonk">
+            <h2>My Stonks</h2>
+            List of all owned stock
+            <ol id="myStonk">
+
+            </ol>
+>>>>>>> 7eb81d0feacc1cc0306dabc2c13ddfd058fc4bef
         </div>
 
         <div class="rightSection">
