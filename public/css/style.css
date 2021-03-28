@@ -1,7 +1,13 @@
-h1{
+.titleHeadP h1{
     text-align: center;
     font-family: 'Courier New', Courier, monospace;
     color:lightseagreen;
+}
+.titleHeadP a{
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    font-size:25px;
 }
 /* Left */
 .leftSection{
