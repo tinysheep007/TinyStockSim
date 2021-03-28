@@ -133,7 +133,7 @@ sell_form.addEventListener('submit',(event)=>{
                 result2.textContent="Today's high:"+data.response.high+" dollars"
                 result3.textContent="Today's low:"+data.response.low+" dollars"
                 result4.textContent=""
-                if(owned_stock===null){
+                if(owned_stock===null || owned_stock.length==0){
                     result4.textContent="You do not have nay stocks Honey !"
                 }else{
                     //need more work

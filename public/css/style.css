@@ -19,17 +19,17 @@ body{
 
     color:rgb(40, 9, 112);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    max-width: 650px;
-    margin:0 auto;
+    max-width: 800px;
+    /* margin:auto auto; */
     padding:0px 16px;
-    
+    margin-left: 30px;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
 }
 
 .main-content{
-    flex-grow: 1;
+    /* flex-grow: 1; */
 }
 
 footer {
@@ -69,5 +69,39 @@ button{
 }
 
 .result{
-    border:5px solid black;
+    border:3px solid black;
+    margin-bottom: 20px;
+    padding: 10px;
+    
+    
+}
+
+.buy{
+    border:3px solid black;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.sell{
+    border:3px solid black;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.searchBarAndSubmit{
+    border:3px solid black;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.myStonk{
+    border:3px solid black;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.ur_money{
+    border:3px solid black;
+    margin-bottom: 20px;
+    padding: 10px;
 }

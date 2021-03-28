@@ -4,6 +4,7 @@
         <meta charset="UTF-8" >
         <link rel="stylesheet" href="./css/style.css">
         <title>TinyStockSim</title>
+        <link rel="icon" href="./img/icon.jpg">
         
     </head>
     <body>
@@ -21,7 +22,7 @@
 
 
         {{!-- buy bar  --}}
-        <div>
+        <div class="buy" id="buy_jump">
             <h2>Buy Section</h2>
             <form id="buy_form">
                 Put stock name here:
@@ -36,7 +37,7 @@
         </div>
 
         {{!-- sell bar --}}
-        <div>
+        <div class="sell" id="sell_jump">
             <h2>Sell Section</h2>
             <form id="sell_form">
                 Put stock name here:
@@ -64,7 +65,7 @@
 
 
 
-        <div id="myStonk">
+        <div class="myStonk">
             <h2>My Stonks</h2>
             List of all owned stock
             <ol id="myStonk">
@@ -73,7 +74,7 @@
         </div>
             
 
-        <div id="ur_mone">
+        <div class="ur_money">
             <h2>My Papel Moni</h2>
             <p id="ur_money"></p>
         </div>
